@@ -17,8 +17,8 @@ class Home extends React.Component {
   render() {
     return (
       <div className="Home">
-          <Output value={"0" || this.state.newValue || this.state.totalValue}/>
-          <Panel clickHandler={this.handleClick}/>
+        <Output value={this.state.next || this.state.total || "0"}/>
+        <Panel clickHandler={this.handleClick}/>
       </div>
     );
   }

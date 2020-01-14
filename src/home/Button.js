@@ -20,7 +20,7 @@ class Button extends React.Component {
       this.props.operator ? "red" : "",
       this.props.clear ? "clear" : "",
     ];
-
+    
     return (
       <div className={className.join(" ")}>
         <button onClick={this.handleClick}>{this.props.name}</button>
