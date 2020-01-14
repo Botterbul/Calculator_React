@@ -7,7 +7,7 @@ class Panel extends React.Component {
     return (
       <div className="Panel">
         <div>
-          <Output />
+          <Output value="0"/>
         </div>
         <div>
             <Button name="clear" onClick={this.handleClick} />
