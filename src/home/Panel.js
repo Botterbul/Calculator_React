@@ -1,15 +1,11 @@
 import React from 'react';
 import Button from './Button';
-import Output from './Output';
 import './Panel.css';
 
 class Panel extends React.Component {
   render() {
     return (
       <div className="Panel">
-        <div>
-          <Output value="0"/>
-        </div>
         <div>
             <Button name="clear" onClick={this.handleClick} clear/>
             <Button name="÷" onClick={this.handleClick} operator/>
