@@ -1,8 +1,13 @@
 import React from 'react';
 import Button from './Button';
 import './Panel.css';
+import PropTypes from "prop-types";
 
 class Panel extends React.Component {
+  static propTypes = {
+    clickHandler: PropTypes.func,
+  };
+
   handleClick = buttonName => {
     this.props.clickHandler(buttonName);
   };

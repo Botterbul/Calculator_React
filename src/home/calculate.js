@@ -55,16 +55,6 @@ export default function calculate(obj, buttonName) {
       return {};
     }
   
-    if (buttonName === ".") {
-      if (obj.next) {
-        if (obj.next.includes(".")) {
-          return {};
-        }
-        return { next: obj.next + "." };
-      }
-      return { next: "0." };
-    }
-  
     if (buttonName === "=") {
       if (obj.next && obj.operation) {
         return {
@@ -75,16 +65,6 @@ export default function calculate(obj, buttonName) {
       } else {
         return {};
       }
-    }
-  
-    if (buttonName === "+/-") {
-      if (obj.next) {
-        return { next: (-1 * parseFloat(obj.next)).toString() };
-      }
-      if (obj.total) {
-        return { total: (-1 * parseFloat(obj.total)).toString() };
-      }
-      return {};
     }
   
     if (obj.operation) {
