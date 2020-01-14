@@ -6,6 +6,7 @@ class Button extends React.Component {
     const className = [
       "btnNormal",
       this.props.operator ? "red" : "",
+      this.props.clear ? "clear" : "",
     ];
 
     return (

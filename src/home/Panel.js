@@ -11,7 +11,7 @@ class Panel extends React.Component {
           <Output value="0"/>
         </div>
         <div>
-            <Button name="clear" onClick={this.handleClick} />
+            <Button name="clear" onClick={this.handleClick} clear/>
             <Button name="÷" onClick={this.handleClick} operator/>
         </div>
         <div>

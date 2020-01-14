@@ -16,4 +16,8 @@
     font-size: 2.5rem;
     flex: 1 0 auto;
     padding: auto;
-  }
+}
+
+.btnNormal.clear {
+    width: 75%;
+}
