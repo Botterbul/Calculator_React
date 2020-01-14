@@ -3,3 +3,8 @@
     width: 25%;
     flex: 1 0 auto;
 }
+
+.btnNormal.red button {
+    background-color: red;
+    color: white;
+  }
