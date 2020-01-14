@@ -2,12 +2,12 @@ import React from 'react';
 import "./Button.css";
 
 class Button extends React.Component {
-  render() {
+  render() {  
     return (
-        <div className="smallButton">
-          <button onClick={this.handleClick}>{this.props.name}</button>
-        </div>
-      );
+      <div className="btnNormal">
+        <button onClick={this.handleClick}>{this.props.name}</button>
+      </div>
+    );
   }
 }
 
