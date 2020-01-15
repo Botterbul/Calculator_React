@@ -5,8 +5,8 @@ import "./Button.css";
 class Button extends React.Component {
   static propTypes = {
     name: PropTypes.string,
-    orange: PropTypes.bool,
-    wide: PropTypes.bool,
+    red: PropTypes.bool,
+    clear: PropTypes.bool,
     clickHandler: PropTypes.func,
   };
 
