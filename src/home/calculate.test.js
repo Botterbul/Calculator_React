@@ -1,6 +1,8 @@
 const { isNumber } = require('./isNumber');
 const { operate } = require('./operate');
-const { calculate } = require('./calculate');
+import React from 'react';
+import renderer from 'react-test-renderer';
+import Output from './Output';
 
 // Test Cases for the isNumber Method
 test('Should be seen as number', () => {
@@ -45,3 +47,12 @@ test('Test Divide Method', () => {
     const answer = operate("8", "4", "÷");
     expect(answer).toBe("2");
 });
+
+//Snapshot testing
+describe('Output Component', () => {
+    it('matches the snapshot', () => {
+        const tree = renderer.create(<Output value="0"/>).toJSON()
+        expect(tree).toMatchSnapshot()
+    })
+})
+

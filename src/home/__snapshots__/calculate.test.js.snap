@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Output Component matches the snapshot 1`] = `
+<div
+  className="Output"
+>
+  <div>
+    0
+  </div>
+</div>
+`;
+
+exports[`Panel Component matches the snapshot 1`] = `
+<div
+  className="Output"
+>
+  <div>
+    0
+  </div>
+</div>
+`;
